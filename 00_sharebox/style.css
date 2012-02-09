@@ -1,0 +1,71 @@
+/* ----------------------------------------------------------
+				SHAREBOX
+---------------------------------------------------------- */
+
+.sharebox{
+	width:474px;height:31px;
+	margin-top: -34px;
+	padding: 0 0 0 10px;
+	background: #fafafa;
+	border: 1px solid #dfdfdf;
+	float:right;
+}
+	.sharebox-wide{width: 574px;}
+
+.share-method, .share-method a{
+	color:#8f8f8f;
+	font-size: 10px;
+	line-height: 21px;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.share-method{
+	margin:0 3px 0 0;
+	float:left;
+	display:block;
+	cursor:pointer;
+}
+.share-method span{
+	height:19px;
+	padding:5px 0 5px 26px;
+	display: block;
+}
+	.share-fb span{width:72px;background: url(images/icons/social-icons/share-fb.png) no-repeat 0 5px;}
+	.share-tw span{width:60px;background: url(images/icons/social-icons/share-tw.png) no-repeat 0 5px;}
+	.share-go span{width:66px;background: url(images/icons/social-icons/share-go.png) no-repeat 0 5px;}
+	.share-pi span{width:72px;background: url(images/icons/social-icons/share-pi.png) no-repeat 0 5px;}
+	.share-em span{width:36px;background: url(images/icons/social-icons/share-em.png) no-repeat 0 5px;}
+
+.tooltip{
+	height:58px;width:78px;
+	padding:10px;padding-top:27px;
+	display:none;
+	z-index: 99;
+	background:transparent url(images/backgrounds/bg_tooltip.png) no-repeat 0 bottom;
+	font-size:12px;color:#fff;text-align:center
+}
+	.share-go .tooltip{height:62px;padding-top:23px}
+
+#fb-root{width:51px;height:20px;margin:0 auto 12px;text-align:center; }
+	a.fb-share{
+		width:79px;
+		height:15px;
+		margin-top: 5px;
+		padding:1px 0 0;
+		display:block;
+
+		border-bottom:1px solid #e6e7e8;
+		border-bottom:1px solid rgba(48,55,64,0.16);
+		border-top:1px solid #e6e7e8;
+		border-top:1px solid rgba(48,55,64,0.16);
+
+		background:#5e77ad;
+
+		color:#fff;
+		font:normal bold 11px/16px "Helvetica Neue",Helvetica,Arial,Geneva,sans-serif !important;
+		letter-spacing:normal;
+		text-align:center;
+	}
+
+
