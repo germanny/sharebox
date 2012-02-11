@@ -9,7 +9,11 @@
 	</div><!-- /.share-fb -->
 	
 	<div class="share-tw share-method">
-		<a href="http://twitter.com/home?status=<?php the_title(); ?> <?php the_permalink(); ?>" title="Share this Article" target="_blank"><span>Twitter</span></a>
+		<span>Twitter</span>
+		<div class="tooltip">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="germanny" data-related="germanny" data-count="vertical">Twitter</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div><!-- /.tooltip -->
 	</div><!-- /.share-fb -->
 
 	<div class="share-go share-method">
@@ -45,7 +49,7 @@
 <script> 
  
 // initialize tooltip
-$(".share-fb span, .share-go span, .share-pi span").tooltip({
+$(".share-fb span, .share-tw span, .share-go span, .share-pi span").tooltip({
  
    // tweak the position
    position: 'bottom, center',
