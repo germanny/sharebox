@@ -7,7 +7,7 @@
 			<a href="http://www.facebook.com/sharer.php?s= 100&amp;p[title]=<?php the_title(); ?>&amp;p[url]=<?php the_permalink(); ?>&amp;p[images][0]=<?php echo jg_post_thumbnail_src() ?>" target="_blank" class="fb-share">Share</a>
 		</div><!-- /.tooltip -->
 	</div><!-- /.share-fb -->
-	
+
 	<div class="share-tw share-method">
 		<span>Twitter</span>
 		<div class="tooltip">
