@@ -35,10 +35,12 @@
 
 	<div class="share-em share-method">
 		<a href="mailto:?subject=<?php the_title(); ?>&amp;body=<?php the_permalink(); ?>"><span>Email</span></a>
-	</div><!-- /.share-fb -->
+	</div><!-- /.share-em -->
 
 <?php /*
-<span class="comments-link<?php if($num_comments == 0) { echo " zero-comments"; }?>"><?php comments_popup_link( __( 'Post a comment', 'ou' ), __( '1', 'ou' ), __( '%', 'ou' ) ); ?><?php if ($num_comments >= 1) {?><a href="#respond" title="" rel="bookmark" class="url"> &#8212; Post a Comment</a><?php } else{} ?></span>
+	<div class="comments-link<?php if($num_comments == 0) { echo " zero-comments"; }?>">
+		<?php comments_popup_link( 'Post a Comment', '1','%', '','' ); ?><?php if ($num_comments >= 1) {?><a href="#respond" title="" rel="bookmark" class="url"> &#8212; Post a Comment</a><?php } else{} ?>
+	</div>
 */ ?>
 </div> 
  

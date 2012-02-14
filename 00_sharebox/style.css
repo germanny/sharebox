@@ -68,4 +68,14 @@
 		text-align:center;
 	}
 
+/* ----------------------------------------------------------
+				ADD THIS SHARE OPTIONS
+---------------------------------------------------------- */
+
+.addthis_toolbox a,
+.addthis_toolbox div {
+	width:100px;
+	display: block;
+	clear: both;
+}
 

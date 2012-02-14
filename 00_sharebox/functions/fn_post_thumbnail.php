@@ -34,7 +34,7 @@ function jg_post_thumbnail_src($size = thumbnail) { //get the src of first image
 }
 
 function jg_post_thumbnail(){ //creates an img tag for use in post lists
-	$the_featured_image = '<img src="'. jg_first_image() . '" alt="'. get_the_title().'">';
+	$the_featured_image = '<img src="'. jg_post_thumbnail_src() . '" alt="'. get_the_title().'">';
 	echo $the_featured_image;
 }
 ?>

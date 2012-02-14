@@ -1,5 +1,5 @@
 <div class="sharebox<?php if(get_post_meta($post->ID, 'infographic_value', TRUE)) { ?> sharebox-wide<?php } ?>"> 
-	<div class="share-fb">
+	<div class="share-fb share-method">
 		<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/icons/share-fb.png" alt="Share on Facebook" />
 		<div class="tooltip">
 			<div id="fb-root"><iframe src="https://www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>" scrolling="no" frameborder="0" style="height: 62px; width: 100%" allowTransparency="true"></iframe></div>
@@ -8,15 +8,21 @@
 		</div><!-- /.tooltip -->
 	</div><!-- /.share-fb -->
 
-	<div class="share-tw">
+	<div class="share-tw share-method">
 		<img src="<?php bloginfo( 'stylesheet_directory' );?>/assets/images/icons/share-tw.png" alt="Share on Twitter" />
 		<div class="tooltip">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-via="OU_com" data-related="OU_com" data-count="vertical">Tweet</a>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="germanny" data-related="germanny" data-count="vertical">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div><!-- /.tooltip -->
 	</div><!-- /.share-tw -->
 
-	
+	<div class="share-go share-method">
+		<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/icons/share-go.png" alt="Share on Google" />
+		<div class="tooltip">
+			<g:plusone size="tall" href="<?php the_permalink(); ?>"></g:plusone>
+		</div><!-- /.tooltip -->
+	</div><!-- /.share-go -->
+
 <?php if(get_post_meta($post->ID, 'infographic_value', TRUE)) { ?>
 	<div class="share-pi share-method">
 		<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/icons/share-pi.png" alt="Share on Pinterest" />
@@ -27,19 +33,16 @@
 	</div><!-- /.share-pi -->
 <?php } ?>
 
-	<div class="share-go">
-		<img src="<?php bloginfo( 'stylesheet_directory' ); ?>/assets/images/icons/share-go.png" alt="Share on Google" />
-		<div class="tooltip">
-			<g:plusone size="tall" href="<?php the_permalink(); ?>"></g:plusone>
-		</div><!-- /.tooltip -->
-	</div><!-- /.share-go -->
-	
-	<a href="mailto:?subject=<?php the_title(); ?>&amp;body=<?php the_permalink(); ?>" class="share-em"><img src="<?php bloginfo( 'stylesheet_directory' );?>/assets/images/icons/share-em.png" alt="Share by Email" /></a>
+	<div class="share-em share-method">
+		<a href="mailto:?subject=<?php the_title(); ?>&amp;body=<?php the_permalink(); ?>"><img src="<?php bloginfo( 'stylesheet_directory' );?>/assets/images/icons/share-em.png" alt="Share by Email" /></a>
+	</div><!-- /.share-em -->
 
-<span class="comments-link<?php if($num_comments == 0) { echo " zero-comments"; }?>"><?php comments_popup_link( __( 'Post a comment', 'ou' ), __( '1', 'ou' ), __( '%', 'ou' ) ); ?><?php if ($num_comments >= 1) {?><a href="#respond" title="" rel="bookmark" class="url"> &#8212; Post a Comment</a><?php } else{} ?></span>
+	<div class="comments-link<?php if($num_comments == 0) { echo " zero-comments"; }?>">
+		<?php comments_popup_link( 'Post a Comment', '1','%', '','' ); ?><?php if ($num_comments >= 1) {?><a href="#respond" title="" rel="bookmark" class="url"> &#8212; Post a Comment</a><?php } else{} ?>
+	</div>
+
 </div> 
- 
- 
+
 <script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
 <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
 
