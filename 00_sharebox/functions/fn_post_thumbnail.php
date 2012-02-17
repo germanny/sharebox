@@ -1,6 +1,7 @@
 <?php
 function jg_post_thumbnail_src($size = thumbnail) { //get the src of first image
 	global $post;
+
 	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
 	$first_img = $matches [1] [0];
 	$custom_image = get_post_meta($post->ID, 'custom_image_value', TRUE);
@@ -28,13 +29,13 @@ function jg_post_thumbnail_src($size = thumbnail) { //get the src of first image
 	} elseif ($first_img) { // author put an image in the content area that is not an attachment (???)
 		$the_first_image = $first_img; 
 	} else { // there just isn't any images anywhere in the post, and a default image is what we need
-		$the_first_image = get_template_directory_uri().'/images/photo-featured-default.jpg';
+		$the_first_image = global_default_photo();
 	}
 	return $the_first_image;
 }
 
 function jg_post_thumbnail(){ //creates an img tag for use in post lists
-	$the_featured_image = '<img src="'. jg_post_thumbnail_src() . '" alt="'. get_the_title().'">';
+	$the_featured_image = '<a href="'.get_permalink().'" title="'. get_the_title().'" class="post-thumb"><img src="'. jg_post_thumbnail_src() . '" alt="'. get_the_title().'"></a>';
 	echo $the_featured_image;
 }
 ?>

@@ -36,6 +36,20 @@
 	.share-go span{width:66px;background: url(images/icons/social-icons/share-go.png) no-repeat 0 5px;}
 	.share-pi span{width:72px;background: url(images/icons/social-icons/share-pi.png) no-repeat 0 5px;}
 	.share-em span{width:36px;background: url(images/icons/social-icons/share-em.png) no-repeat 0 5px;}
+/* ICONS ONLY; HIDE TEXT
+.share-method span{
+	width: 16px;
+	height:16px;
+	padding:0 0 10px;
+	display: block;
+	text-indent: -9999px;
+}
+	.share-fb span{background: url(images/icons/social-icons/share-fb.png) no-repeat 0 0;}
+	.share-tw span{background: url(images/icons/social-icons/share-tw.png) no-repeat 0 0;}
+	.share-go span{background: url(images/icons/social-icons/share-go.png) no-repeat 0 0;}
+	.share-pi span{background: url(images/icons/social-icons/share-pi.png) no-repeat 0 0;}
+	.share-em span{background: url(images/icons/social-icons/share-em.png) no-repeat 0 0;}
+*/
 
 .tooltip{
 	height:58px;width:78px;
