@@ -5,7 +5,7 @@
 
 <div class="addthis_twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="TWITTER HANDLE HERE" data-related="TWITTER HANDLE HERE" data-count="horizontal">Tweet</a></div>
 
-<div class="g-plusone" data-size="small" data-href="<?php the_permalink(); ?>"></div>
+<div class="g-plusone" data-size="medium" data-href="<?php the_permalink(); ?>"></div>
 
 <?php if(get_post_meta($post->ID, 'infographic_value', TRUE)) { ?><div class="addthis_pinterest"><a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php echo jg_post_thumbnail_src(); ?>&description=<?php the_title(); ?>" class="pin-it-button" count-layout="horizontal">Pin It</a></div><?php } ?>
 
@@ -14,8 +14,7 @@
 
 <!-- Facebook Like script -->
 <div id="fb-root"></div>
-<script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=258734510850868"; fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+<script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/all.js#xfbml=1"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Twitter share script -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
