@@ -10,7 +10,7 @@ function jg_excerpt($length = 200, $more = 1){
 
 	if ($more == 1) {
 ?>
-	<p><?php echo $excerpt; ?><a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark" class="more-link">View More</a></p>
+	<p><?php echo $excerpt; ?> <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" rel="bookmark" class="more-link">View More</a></p>
 <?php } if ($more == 2) {
 	echo $excerpt;
 	}

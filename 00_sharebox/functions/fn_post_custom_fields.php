@@ -4,7 +4,7 @@ array(
 	"infographic" => array(
 		"name" => "infographic",
 		"std" => "",
-		"title" => "Is this an infographic post? If you check this box, we'll add a Pin It share option.",
+		"title" => "Is this an infographic post? If you check this box, we'll add a Pin It share option. The image should be 800px wide.",
 		"description" => "",
 		"type" => "checkbox"),
 );

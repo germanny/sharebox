@@ -61,7 +61,7 @@
 }
 	.share-go .tooltip,.share-tw .tooltip{height:62px;padding-top:23px}
 
-#fb-root{width:51px;height:20px;margin:0 auto 12px;text-align:center; }
+.tooltip #fb-root{width:51px;height:20px;margin:0 auto 12px;text-align:center; }
 	a.fb-share{
 		width:79px;
 		height:15px;
