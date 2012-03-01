@@ -1,0 +1,63 @@
+================================
+
+FILE DIRECTORY
+
+================================
+
+/functions
+  fn_post_custom_fields.php
+	fn_post_thumbnail.php
+functions.php
+/images
+	/backgrounds
+		bg_tooltip.php
+	/social-icons
+		share-em.png
+		share-fb.png
+		share-go.png
+		share-pi.png
+		share-tw.png
+/includes
+	add-this-share-options.php
+	inc-sharebox-images.php
+	inc-sharebox-text.php
+styles.css
+
+================================
+
+DEFINITIONS
+
+================================
+
+fn_post_custom_fields.php
+	Adds a custom field to the Post the author can check to indicate the post contains an infographic. This triggers the Pinterest share option.
+
+--------------------------------
+
+fn_post_thumbnail.php
+	Contains two functions which grab a thumbnail image for the post. It looks for (in this order): featured image, custom image (if the post type is a Page and there is a custom field called "custom_image_value"), first attached image, first image in the content, or a default image you set as a CONSTANT in functions.php
+
+--------------------------------
+
+functions.php
+	Contains functions used by the included files. Add these to your functions.php file.
+
+--------------------------------
+
+add-this-share-options.php
+	Original snippet from the AddThis site. Some customization is included: custom Twitter handle, Pinterest. No tooltip.
+
+--------------------------------
+
+inc-sharebox-images.php
+	Custom snippet with five share options. Icon image files directly referenced; no text for share option. Tooltip js included.
+
+--------------------------------
+
+inc-sharebox-text.php
+	Custom snippet with five share options. Text label for each share option wrapped in SPAN tag. Icons added via css. Tooltip js included.
+
+--------------------------------
+
+styles.css
+	Styles for sharebox id, tooltip, icons.
