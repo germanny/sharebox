@@ -1,5 +1,9 @@
 <?php
 
+    // Customize the variables here
+    define('TWITTER_USERNAME', 'USERNAME'); // Replace USERNAME with your actualy username (e.g. EricRasch). Since we're using this as a constant, it needs to be defined in a place that's called by the theme. Once done, it will be available across all the other PHP files.
+
+
 /* CUSTOM EXCERPT
 ****************************************************************************************************************************************/
 function jg_excerpt($length = 200, $more = 1){
