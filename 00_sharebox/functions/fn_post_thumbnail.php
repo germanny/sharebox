@@ -1,9 +1,4 @@
 <?php
-function global_default_photo(){
-	global $default_photo;
-	$default_photo = get_template_directory_uri().'/images/logos/logo_facebook.jpg';
-	return $default_photo;
-}
 function jg_post_thumbnail_src($size = thumbnail) { //get the src of first image
 	global $post;
 
@@ -34,7 +29,7 @@ function jg_post_thumbnail_src($size = thumbnail) { //get the src of first image
 	} elseif ($first_img) { // author put an image in the content area that is not an attachment (???)
 		return $first_img; 
 	} else { // there just isn't any images anywhere in the post, and a default image is what we need
-		global_default_photo();
+		return DEFAULT_PHOTO;
 	}
 }
 
