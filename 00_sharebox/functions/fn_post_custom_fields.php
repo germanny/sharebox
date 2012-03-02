@@ -41,11 +41,7 @@ function post_custom_fields() {
 			break;
 			case "textarea":
 			echo'<textarea type="text" name="'.$meta_box['name'].'_value" cols="80" rows="5" style="width:98%;">'.attribute_escape($meta_box_value).'</textarea><br />';
-			break;
-			case "calendar": ?><br />
-				<script src="<?php echo get_bloginfo('template_directory');?>/includes/php_calendar/php_calendar/scripts.js" type="text/javascript"></script>
-				<input type="input" id="date" name="<?php echo $meta_box['name']; ?>_value" value="<?php if ( attribute_escape($meta_box_value) != ''){echo $meta_box_value;} else {} ?>" style="width:200px;" /> <a href="javascript:viewcalendar()"><img src="../wp-content/themes/ghp/includes/php_calendar/images/iconCalendar.gif" /></a><br />
-			<?php break; } echo '</p>'; }
+			break; } echo '</p>'; }
 	}
 }
 function create_post_meta_box() {

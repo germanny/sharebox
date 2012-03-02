@@ -11,7 +11,7 @@
 	<div class="share-tw share-method">
 		<span>Twitter</span>
 		<div class="tooltip">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-via="germanny" data-related="germanny" data-count="vertical">Twitter</a>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="<?php return TWITTER_USERNAME; ?>" data-related="<?php return TWITTER_USERNAME; ?>" data-count="vertical">Twitter</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div><!-- /.tooltip -->
 	</div><!-- /.share-fb -->
