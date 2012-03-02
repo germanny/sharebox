@@ -8,11 +8,7 @@
 
 <div class="fb-like" data-href="<?php the_permalink(); ?>" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
 
-<<<<<<< HEAD
-<div class="addthis_twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="<?php return $twitter_username; ?>" data-related="<?php return $twitter_username; ?>" data-count="horizontal">Tweet</a></div>
-=======
-<div class="addthis_twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="<?php return TWITTER_USERNAME; ?>" data-related="TWITTER HANDLE HERE" data-count="horizontal">Tweet</a></div>
->>>>>>> Added Twitter Username CONSTANT, per ericrasch suggestion
+<div class="addthis_twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="<?php echo TWITTER_USERNAME; ?>" data-related="<?php echo TWITTER_USERNAME; ?>" data-count="horizontal">Tweet</a></div>
 
 <div class="g-plusone" data-size="medium" data-href="<?php the_permalink(); ?>"></div>
 
