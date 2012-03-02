@@ -5,11 +5,7 @@ FILE DIRECTORY
 ================================
 
 /functions
-<<<<<<< HEAD
-  fn_post_custom_fields.php
-=======
 	fn_post_custom_fields.php
->>>>>>> Added Twitter Username CONSTANT, per ericrasch suggestion
 	fn_post_thumbnail.php
 functions.php
 /images
