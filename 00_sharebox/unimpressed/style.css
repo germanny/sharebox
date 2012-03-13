@@ -2,39 +2,15 @@
 				SHAREBOX
 ---------------------------------------------------------- */
 
-/*
-If the content area has relative positioning, the script won't put the tooltip in the right place. Remove the script from the include and use this instead:
-
-Add to appropriate tags below:
-
-	.sharebox{
-		position: relative;
-	}
-	.tooltip {
-		position: absolute;
-		top:16px;opacity: 0;
-		/* display: none; * / //needs to be commented out 
-	}
-	.share-fb:hover .tooltip,.share-go:hover .tooltip,.share-pi:hover .tooltip,.share-tw:hover .tooltip{
-		opacity: 1;z-index: 9999;
-		-webkit-transition: opacity 0.3s ease-in-out;
-		   -moz-transition: opacity 0.3s ease-in-out;
-		     -o-transition: opacity 0.3s ease-in-out;
-		        transition: opacity 0.3s ease-in-out;
-	}
-	.share-fb:hover .tooltip{left:-40px;}
-	.share-tw:hover .tooltip{left:-19px;}
-	.share-go:hover .tooltip{left:3px;}
-		.sharebox-wide .share-go:hover .tooltip{left:25px;}
-	.share-pi:hover .tooltip{left:3px;}
-
-*/
-
-
 .sharebox{
-	width:120px;height:31px;
+	width:474px;height:31px;
+	margin-top: -34px;
+	padding: 0 0 0 10px;
+	background: #fafafa;
+	border: 1px solid #dfdfdf;
 	float:right;
 }
+	.sharebox-wide{width: 574px;}
 
 .share-method, .share-method a{
 	color:#8f8f8f;
@@ -45,11 +21,22 @@ Add to appropriate tags below:
 	text-transform: uppercase;
 }
 .share-method{
-	margin:0 0 0 6px;
-	float:right;
+	margin:0 3px 0 0;
+	float:left;
 	display:block;
 	cursor:pointer;
 }
+.share-method span{
+	height:19px;
+	padding:5px 0 5px 26px;
+	display: block;
+}
+	.share-fb span{width:72px;background: url(images/icons/social-icons/share-fb.png) no-repeat 0 5px;}
+	.share-tw span{width:60px;background: url(images/icons/social-icons/share-tw.png) no-repeat 0 5px;}
+	.share-go span{width:66px;background: url(images/icons/social-icons/share-go.png) no-repeat 0 5px;}
+	.share-pi span{width:72px;background: url(images/icons/social-icons/share-pi.png) no-repeat 0 5px;}
+	.share-em span{width:36px;background: url(images/icons/social-icons/share-em.png) no-repeat 0 5px;}
+/* ICONS ONLY; HIDE TEXT
 .share-method span{
 	width: 16px;
 	height:16px;
@@ -60,14 +47,14 @@ Add to appropriate tags below:
 	.share-fb span{background: url(images/icons/social-icons/share-fb.png) no-repeat 0 0;}
 	.share-tw span{background: url(images/icons/social-icons/share-tw.png) no-repeat 0 0;}
 	.share-go span{background: url(images/icons/social-icons/share-go.png) no-repeat 0 0;}
-	.share-li span{background: url(images/icons/social-icons/share-li.png) no-repeat 0 0;}
 	.share-pi span{background: url(images/icons/social-icons/share-pi.png) no-repeat 0 0;}
 	.share-em span{background: url(images/icons/social-icons/share-em.png) no-repeat 0 0;}
+*/
 
 .tooltip{
-	display:none;
 	height:58px;width:78px;
 	padding:10px;padding-top:27px;
+	display:none;
 	z-index: 99;
 	background:transparent url(images/backgrounds/bg_tooltip.png) no-repeat 0 bottom;
 	font-size:12px;color:#fff;text-align:center
@@ -94,3 +81,15 @@ Add to appropriate tags below:
 		letter-spacing:normal;
 		text-align:center;
 	}
+
+/* ----------------------------------------------------------
+				ADD THIS SHARE OPTIONS
+---------------------------------------------------------- */
+
+.addthis_toolbox a,
+.addthis_toolbox div {
+	width:100px;
+	display: block;
+	clear: both;
+}
+

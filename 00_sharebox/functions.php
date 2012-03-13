@@ -1,8 +1,23 @@
 <?php
 /* Customize the variables here
 ****************************************************************************************************************************************/
-define('TWITTER_USERNAME', 'USERNAME'); // Replace USERNAME with your actualy username (e.g. EricRasch). Since we're using this as a constant, it needs to be defined in a place that's called by the theme. Once done, it will be available across all the other PHP files.
+define('TWITTER_USERNAME', 'TW USERNAME');
+define('LINKEDIN', 'LI USERNAME GOES HERE');
 define('DEFAULT_PHOTO', get_template_directory_uri().'/images/photo-featured-default.jpg');
+
+/* NEAT TRIM: Trim length of excerpt to certain # of words - LIMITS BY CHARACTERS TO THE NEAREST WORD
+used in jg_excerpt()
+****************************************************************************************************************************************/
+	function neat_trim($str, $n, $delim=' &hellip;') {	
+	$len = strlen($str);
+	if ($len > $n) {
+		preg_match('/(.{' . $n . '}.*?)\b/', $str, $matches);
+		return rtrim($matches[1]) . $delim;
+	}
+	else {
+		return $str;
+	}
+}
 
 /* CUSTOM EXCERPT
 ****************************************************************************************************************************************/
@@ -24,14 +39,23 @@ function jg_excerpt($length = 200, $more = 1){
 ********************************************************************************************************************************/
 include_once('functions/fn_post_custom_fields.php');
 
-/* IMAGES *********************************************************************************************************************************
-/* Add Post Thumbnail Images
-********************************************************************************************************************************/
+
+/*IMAGES
+Add Post Thumbnail Images
+***************************************************************************************************************************************/
 add_theme_support( 'post-thumbnails', array( 'post' ) );
-set_post_thumbnail_size( 150, 150, true );
+set_post_thumbnail_size( 200, 155, true );
+
+/* ADD SUPPORT FOR VARIOUS THUMBNAIL SIZES
+http://codex.wordpress.org/Function_Reference/add_image_size
+**************************************************************************************************************************************
+if ( function_exists( 'add_image_size' ) ) { 
+	add_image_size( 'category-thumb', 300, 9999 ); //300 pixels wide (and unlimited height)
+	add_image_size( 'homepage-thumb', 220, 180, true ); //(cropped)
+}*/
 
 /* POST THUMBNAIL
-********************************************************************************************************************************/
+***************************************************************************************************************************************/
 include_once('functions/fn_post_thumbnail.php');
 
 ?>

@@ -33,9 +33,14 @@ function jg_post_thumbnail_src($size = thumbnail) { //get the src of first image
 	}
 }
 
-function jg_post_thumbnail(){ //creates an img tag for use in post lists
-    if ($src = jg_post_thumbnail_src()) {
+function jg_post_thumbnail($size = thumbnail){ //creates an img tag for use in post lists
+    if ($src = jg_post_thumbnail_src($size)) {
 		echo '<a href="'. get_permalink() .'" title="Permanent Link to '. get_the_title() .'" class="post-thumb"><img src="'. $src . '" alt="'. get_the_title().'"></a>';
+
+    	/* if(DEFAULT_PHOTO){ $class = 'empty'; } else { $class = 'post-thumb'; }
+    
+		echo '<a href="'. get_permalink() .'" title="Permanent Link to '. get_the_title() .'" class="' . $class . '"><img src="'. $src . '" alt="'. get_the_title().'"></a>';*/
+
 	}
 }
 ?>

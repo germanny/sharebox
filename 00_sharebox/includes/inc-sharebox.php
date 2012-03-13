@@ -44,9 +44,8 @@
 */ ?>
 </div> 
  
- 
-<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
 <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
 
 <script> 
  

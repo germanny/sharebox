@@ -12,6 +12,9 @@
 
 <div class="g-plusone" data-size="medium" data-href="<?php the_permalink(); ?>"></div>
 
+<div class="addthis_linkedin"><script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="IN/Share" data-url="<?php echo LINKEDIN; ?>" data-counter="right"></script></div>
+
 <?php if(get_post_meta($post->ID, 'infographic_value', TRUE)) { ?><div class="addthis_pinterest"><a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php echo jg_post_thumbnail_src(); ?>&description=<?php the_title(); ?>" class="pin-it-button" count-layout="horizontal">Pin It</a></div><?php } ?>
 
 <div class="addthis_share"><a class="addthis_counter addthis_pill_style"></a></div>
