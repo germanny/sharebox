@@ -44,7 +44,7 @@ include_once('functions/fn_post_custom_fields.php');
 Add Post Thumbnail Images
 ***************************************************************************************************************************************/
 add_theme_support( 'post-thumbnails', array( 'post' ) );
-set_post_thumbnail_size( 200, 155, true );
+set_post_thumbnail_size( 200, 150, true );
 
 /* ADD SUPPORT FOR VARIOUS THUMBNAIL SIZES
 http://codex.wordpress.org/Function_Reference/add_image_size
