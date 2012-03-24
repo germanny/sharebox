@@ -22,11 +22,11 @@ Add to appropriate tags below:
 		     -o-transition: opacity 0.3s ease-in-out;
 		        transition: opacity 0.3s ease-in-out;
 	}
-	.share-fb:hover .tooltip{left:-40px;}
-	.share-tw:hover .tooltip{left:-19px;}
-	.share-go:hover .tooltip{left:3px;}
+	.share-fb:hover .tooltip{left:-35px;}
+	.share-tw:hover .tooltip{left:-13px;}
+	.share-go:hover .tooltip{left:9px;}
 		.sharebox-wide .share-go:hover .tooltip{left:25px;}
-	.share-pi:hover .tooltip{left:3px;}
+	.share-pi:hover .tooltip{left:9px;}
 
 */
 
@@ -57,19 +57,19 @@ Add to appropriate tags below:
 	display: block;
 	text-indent: -9999px;
 }
-	.share-fb span{background: url(images/icons/social-icons/share-fb.png) no-repeat 0 0;}
-	.share-tw span{background: url(images/icons/social-icons/share-tw.png) no-repeat 0 0;}
-	.share-go span{background: url(images/icons/social-icons/share-go.png) no-repeat 0 0;}
-	.share-li span{background: url(images/icons/social-icons/share-li.png) no-repeat 0 0;}
-	.share-pi span{background: url(images/icons/social-icons/share-pi.png) no-repeat 0 0;}
-	.share-em span{background: url(images/icons/social-icons/share-em.png) no-repeat 0 0;}
+	.share-fb span{background: url(images/sharebox/share-fb.png) no-repeat 0 0;}
+	.share-tw span{background: url(images/sharebox/share-tw.png) no-repeat 0 0;}
+	.share-go span{background: url(images/sharebox/share-go.png) no-repeat 0 0;}
+	.share-li span{background: url(images/sharebox/share-li.png) no-repeat 0 0;}
+	.share-pi span{background: url(images/sharebox/share-pi.png) no-repeat 0 0;}
+	.share-em span{background: url(images/sharebox/share-em.png) no-repeat 0 0;}
 
 .tooltip{
 	display:none;
 	height:58px;width:78px;
 	padding:10px;padding-top:27px;
 	z-index: 99;
-	background:transparent url(images/backgrounds/bg_tooltip.png) no-repeat 0 bottom;
+	background:transparent url(images/sharebox/bg-tooltip.png) no-repeat 0 bottom;
 	font-size:12px;color:#fff;text-align:center
 }
 	.share-go .tooltip,.share-tw .tooltip{height:62px;padding-top:23px}
