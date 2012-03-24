@@ -5,59 +5,52 @@ FILE DIRECTORY
 ================================
 
 /functions
-	fn_post_custom_fields.php
-	fn_post_thumbnail.php
+	fn-post-custom-fields.ph
+	fn-post-thumbnail.php
+	fn-sharebox.php
 functions.php
 /images
-	/backgrounds
-		bg_tooltip.php
-	/social-icons
+	/sharebox
+		bg-tooltip.php
 		share-em.png
 		share-fb.png
 		share-go.png
 		share-pi.png
 		share-tw.png
-/includes
-	add-this-share-options.php
-	inc-sharebox-images.php
-	inc-sharebox-text.php
-styles.css
+README
+/styles
+	sharebox.css
+
 
 ================================
 
-DEFINITIONS
+USAGE
 
 ================================
 
-fn_post_custom_fields.php
-	Adds a custom field to the Post the author can check to indicate the post contains an infographic. This triggers the Pinterest share option.
-
---------------------------------
-
-fn_post_thumbnail.php
-	Contains two functions which grab a thumbnail image for the post. It looks for (in this order): featured image, custom image (if the post type is a Page and there is a custom field called "custom_image_value"), first attached image, first image in the content, or a default image you set as a CONSTANT in functions.php
-
---------------------------------
+/functions
+	Add this directory to your theme, or copy the directory contents to your theme's /functions directory if it already exists.
 
 functions.php
-	Contains functions used by the included files. Add these to your functions.php file.
+	Add these declarations to your theme's functions.php file. Set the Twitter Username and adjust the set_post_thumbnail size as needed.
 
---------------------------------
+/images/sharebox
+	Copy this directory to your theme's /images directory.
 
-add-this-share-options.php
-	Original snippet from the AddThis site. Some customization is included: custom Twitter handle, Pinterest. No tooltip.
+/styles/sharebox.css
+	Add or @import the styles to your stylesheet.
 
---------------------------------
 
-inc-sharebox-images.php
-	Custom snippet with five share options. Icon image files directly referenced; no text for share option. Tooltip js included.
+Place <?php jg_sharebox(); ?> wherever you want the sharebox to appear.
+	-	If you are using WordPress Comments and want to show the comment count: jg_sharebox(1);
+	-	If you are using Facebook Comments but still want a link to the comments area of the page: jg_sharebox(2, 'comments'); where "comments" is the ID of the DIV tag surrounding the comments area.
+	-	If the content area has relative positioning, the script that reveals and animates the tooltip misfires. To remove the script: jg_sharebox( 0, '', false ); . Be sure to adjust the styles in sharebox.css according to the instructions in that file.
 
---------------------------------
 
-inc-sharebox-text.php
-	Custom snippet with five share options. Text label for each share option wrapped in SPAN tag. Icons added via css. Tooltip js included.
+Example:
 
---------------------------------
+<?php jg_sharebox( 0, '', false ); ?>
+	Will show no comments, no comment tag, and no script will be included.
 
-styles.css
-	Styles for sharebox id, tooltip, icons.
+<?php jg_sharebox( 2, 'comments' ); ?>
+	Will show a link with words "Post a Comment" and link to the "comments" DIV tag.
