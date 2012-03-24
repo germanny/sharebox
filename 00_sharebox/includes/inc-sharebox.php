@@ -2,9 +2,7 @@
 	<div class="share-fb share-method">
 		<span>Facebook</span>
 		<div class="tooltip">
-			<div id="fb-root"><iframe src="https://www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>" scrolling="no" frameborder="0" style="height: 62px; width: 51px" allowTransparency="true"></iframe></div>
-			
-			<a href="http://www.facebook.com/sharer.php?s= 100&amp;p[title]=<?php the_title(); ?>&amp;p[url]=<?php the_permalink(); ?>&amp;p[images][0]=<?php echo jg_post_thumbnail_src() ?>" target="_blank" class="fb-share">Share</a>
+			<div id="fb-root"><iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;send=false&amp;layout=box_count&amp;show_faces=false&amp;appId=<?php echo FB_APP_ID; ?>" scrolling="no" frameborder="0" style="width:51px; height:62px;" allowTransparency="true"></iframe></div>
 		</div><!-- /.tooltip -->
 	</div><!-- /.share-fb -->
 
