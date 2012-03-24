@@ -3,6 +3,7 @@
 /* Customize the variables here
 ****************************************************************************************************************************************/
 define('TWITTER_USERNAME', 'USERNAME'); // replace USERNAME with the Twitter Username for this site.
+define('FB_APP_ID', '###');
 
 /* POST CUSTOM FIELDS UI
 ********************************************************************************************************************************/
