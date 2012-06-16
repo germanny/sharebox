@@ -22,11 +22,11 @@ Add to appropriate tags below:
 		     -o-transition: opacity 0.3s ease-in-out;
 		        transition: opacity 0.3s ease-in-out;
 	}
-	.share-fb:hover .tooltip{left:-40px;}
-	.share-tw:hover .tooltip{left:-19px;}
-	.share-go:hover .tooltip{left:3px;}
+	.share-fb:hover .tooltip{left:-35px;}
+	.share-tw:hover .tooltip{left:-13px;}
+	.share-go:hover .tooltip{left:9px;}
 		.sharebox-wide .share-go:hover .tooltip{left:25px;}
-	.share-pi:hover .tooltip{left:3px;}
+	.share-pi:hover .tooltip{left:9px;}
 
 */
 
@@ -53,26 +53,26 @@ Add to appropriate tags below:
 .share-method span{
 	width: 16px;
 	height:16px;
+	background: url(images/sharebox/icons-sharebox.png) no-repeat 0 0;
 	padding:0 0 10px;
 	display: block;
 	text-indent: -9999px;
 }
-	.share-fb span{background: url(images/icons/social-icons/share-fb.png) no-repeat 0 0;}
-	.share-tw span{background: url(images/icons/social-icons/share-tw.png) no-repeat 0 0;}
-	.share-go span{background: url(images/icons/social-icons/share-go.png) no-repeat 0 0;}
-	.share-li span{background: url(images/icons/social-icons/share-li.png) no-repeat 0 0;}
-	.share-pi span{background: url(images/icons/social-icons/share-pi.png) no-repeat 0 0;}
-	.share-em span{background: url(images/icons/social-icons/share-em.png) no-repeat 0 0;}
+	.share-fb span{background-position: 0 0;}
+	.share-tw span{background-position: -16px 0;}
+	.share-go span{background-position: -32px 0;}
+	.share-li span{background-position: -48px 0;}
+	.share-pi span{background-position: -64px 0;}
+	.share-em span{background-position: -80px 0;}
 
 .tooltip{
 	display:none;
-	height:58px;width:78px;
-	padding:10px;padding-top:27px;
+	height:62px;width:78px;
+	padding:10px;padding-top:23px;
 	z-index: 99;
-	background:transparent url(images/backgrounds/bg_tooltip.png) no-repeat 0 bottom;
+	background:transparent url(images/sharebox/bg-tooltip.png) no-repeat 0 bottom;
 	font-size:12px;color:#fff;text-align:center
 }
-	.share-go .tooltip,.share-tw .tooltip{height:62px;padding-top:23px}
 
 .tooltip #fb-root{width:51px;height:20px;margin:0 auto 12px;text-align:center; }
 	a.fb-share{
