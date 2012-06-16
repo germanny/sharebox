@@ -3,9 +3,9 @@
 /* Customize the variables here
 ****************************************************************************************************************************************/
 define('TWITTER_USERNAME', 'TW USERNAME');
-define('FB_APP_ID', 'APP ID');
+define('FB_APP_ID', '253852751385205');
 define('FB_PAGE', ''); //full page URL
-define('DEFAULT_PHOTO', get_template_directory_uri().'/images/photo-featured-default.jpg');
+define('DEFAULT_PHOTO', get_template_directory_uri().'/images/logo.gif');
 
 /* NEAT TRIM: Trim length of excerpt to certain # of words - LIMITS BY CHARACTERS TO THE NEAREST WORD
 used in jg_excerpt()

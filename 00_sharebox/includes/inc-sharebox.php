@@ -1,17 +1,7 @@
 <div class="sharebox<?php if(get_post_meta($post->ID, 'infographic_value', TRUE)) { ?> sharebox-wide<?php } ?>"> 
-	<div class="share-fb share-method">
-		<span>Facebook</span>
-		<div class="tooltip">
-			<div class="fb-like" data-href="<?php the_permalink(); ?>" data-send="false" data-layout="box_count" data-width="152" data-show-faces="false"></div>
-		</div><!-- /.tooltip -->
-	</div><!-- /.share-fb -->
-
-	<div class="share-tw share-method">
-		<span>Twitter</span>
-		<div class="tooltip">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-via="<?php echo TWITTER_USERNAME; ?>" data-related="<?php echo TWITTER_USERNAME; ?>" data-count="vertical">Tweet</a>
-		</div><!-- /.tooltip -->
-	</div><!-- /.share-fb -->
+	<div class="share-em share-method">
+		<a href="mailto:?subject=<?php the_title(); ?>&amp;body=<?php the_permalink(); ?>"><span>Email</span></a>
+	</div><!-- /.share-em -->
 
 	<div class="share-go share-method">
 		<span>Google+</span>
@@ -25,13 +15,25 @@
 		<span>Pinterest</span>
 		<div class="tooltip">
 			<a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php echo jg_post_thumbnail_src(2) ?>&description=<?php the_title(); ?>" class="pin-it-button" count-layout="vertical">Pin It</a>
+<script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script>
 		</div><!-- /.tooltip -->
 	</div><!-- /.share-pi -->
 <?php } ?>
 
-	<div class="share-em share-method">
-		<a href="mailto:?subject=<?php the_title(); ?>&amp;body=<?php the_permalink(); ?>"><span>Email</span></a>
-	</div><!-- /.share-em -->
+	<div class="share-tw share-method">
+		<span>Twitter</span>
+		<div class="tooltip">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="<?php echo TWITTER_USERNAME; ?>" data-related="<?php echo TWITTER_USERNAME; ?>" data-count="vertical">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		</div><!-- /.tooltip -->
+	</div><!-- /.share-fb -->
+
+	<div class="share-fb share-method">
+		<span>Facebook</span>
+		<div class="tooltip">
+			<div class="fb-like" data-href="<?php the_permalink(); ?>" data-send="false" data-layout="box_count" data-width="152" data-show-faces="false"></div>
+		</div><!-- /.tooltip -->
+	</div><!-- /.share-fb -->
 
 <?php /*
 	<div class="comments-link<?php if($num_comments == 0) { echo " zero-comments"; }?>">
@@ -40,6 +42,7 @@
 */ ?>
 </div> 
  
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script> 
 <script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
 
 <script> 
