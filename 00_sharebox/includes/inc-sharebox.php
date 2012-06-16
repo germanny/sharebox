@@ -2,15 +2,14 @@
 	<div class="share-fb share-method">
 		<span>Facebook</span>
 		<div class="tooltip">
-			<div id="fb-root"><iframe src="//www.facebook.com/plugins/like.php?href=<?php the_permalink(); ?>&amp;send=false&amp;layout=box_count&amp;show_faces=false&amp;appId=<?php echo FB_APP_ID; ?>" scrolling="no" frameborder="0" style="width:51px; height:62px;" allowTransparency="true"></iframe></div>
+			<div class="fb-like" data-href="<?php the_permalink(); ?>" data-send="false" data-layout="box_count" data-width="152" data-show-faces="false"></div>
 		</div><!-- /.tooltip -->
 	</div><!-- /.share-fb -->
 
 	<div class="share-tw share-method">
 		<span>Twitter</span>
 		<div class="tooltip">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-via="<?php echo TWITTER_USERNAME; ?>" data-related="<?php echo TWITTER_USERNAME; ?>" data-count="vertical">Twitter</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="<?php echo TWITTER_USERNAME; ?>" data-related="<?php echo TWITTER_USERNAME; ?>" data-count="vertical">Tweet</a>
 		</div><!-- /.tooltip -->
 	</div><!-- /.share-fb -->
 
@@ -25,8 +24,7 @@
 	<div class="share-pi share-method">
 		<span>Pinterest</span>
 		<div class="tooltip">
-			<a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php echo jg_post_thumbnail_src() ?>&description=<?php the_title(); ?>" class="pin-it-button" count-layout="vertical">Pin It</a>
-<script type="text/javascript" src="http://assets.pinterest.com/js/pinit.js"></script>
+			<a href="http://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&media=<?php echo jg_post_thumbnail_src(2) ?>&description=<?php the_title(); ?>" class="pin-it-button" count-layout="vertical">Pin It</a>
 		</div><!-- /.tooltip -->
 	</div><!-- /.share-pi -->
 <?php } ?>
@@ -42,7 +40,6 @@
 */ ?>
 </div> 
  
-<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
 <script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
 
 <script> 
